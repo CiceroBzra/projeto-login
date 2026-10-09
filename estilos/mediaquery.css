@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/* Typical Devise Breakpoint:
+
+Pequenas Telas: Até 600px;
+Clular: de 600px até 468px;
+Tablet: 768 até 992px;
+Descktop:992px até 1200px;
+Grandes Telas: Acima de 1200px.
+
+*/
+
+/* Ficará na Largura específica para tablet quando atingir o ponto de 992px. */
+
+@media screen and (min-width: 768px ) and (max-width: 992px) {
+
+    section#login {
+
+    width: 80vw;
+
+    }
+
+
+     section#login > div#imagem {
+
+    width: 30%;
+    height: 100%;
+    float: left;
+
+  }
+
+  section#login > div#formulario {
+
+    float: right;
+    width: 70%;
+
+    }
+}
+
+    /*  */
+
+    @media screen and (min-width: 992px) {
+
+    section#login  {
+
+    width: 990px;
+    
+    }
+
+    section#login > div#imagem {
+
+        float: left;
+        width: 50%;
+
+    }
+
+}
+    
