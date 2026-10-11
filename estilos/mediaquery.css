@@ -23,7 +23,6 @@ Grandes Telas: Acima de 1200px.
 
 
     section#login {
-
     width: 80vw;
 
     }
@@ -79,6 +78,12 @@ Grandes Telas: Acima de 1200px.
 
     float: left;
     width: 50%;
+
+    }
+
+     div#formulario > h1 {
+
+    font-size: 2em;
 
     }
 
