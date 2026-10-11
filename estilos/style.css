@@ -12,46 +12,54 @@ Lilás: #5f2c82
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Fas com que a Borda faça parte da conta da Largura */
 }
+
+/* Configurações para o corpo do Site (Body) */
 
 body, html {
 
-    background-color: #5f2c82 ;
-    height: 100vh;
-    width: 100vw;
+    background-color: #5f2c82 ;             /* Cor de Fundo*/
+    height: 100vh;                            /* Altura da Tela  (100% da Altura da tela) */
+    width: 100vw;                             /* Largura da Tela (100% da Largura da Tela) */
     
 }
 
 main {
 
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    position: relative;         /* Configurar como bloco Principal */
+    height: 100vh;              /* Altura da Tela  (100% da Altura da tela) */
+    width: 100vw;               /* Largura da Tela (100% da Largura da Tela) */
 }
+
+                        /* Configuração Inicial para Mobile Fist (Configuração para Celular) */
 
 section#login {
 
+    /* As três Configurações Tradicionais para Centralizar na Tela: 
+  ( position: absolute;),    (top: 50%;) e (    left: 50%;) */
+
+
     background-color: white;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%;               /* 50% para cima */
+    left: 50%;              /* 50% para a esquerda */
     transform:translate(-50%, -50%) ;
-    width: 250px;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden; /* Tudo que tiver fora da borda vai ficar escondido */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
-
-    transition: width 0.3s, height 0.3s;
-    transition-timing-function: ease; /* Suavisa o Efeito) */
+    
+    width: 250px;               /* Largura da Tela */
+    height: 500px;              /* Altura da Tela */
+    border-radius: 20px;        /* Borda arredondada */
+    overflow: hidden;           /* Tudo que tiver fora da borda vai ficar escondido */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);          /* Sombra das bordas */
+    transition: width 0.3s, height 0.3s;                 /* Modo e tempo/duração detransição */
+    transition-timing-function: ease;                         /* Suavisa o Efeito) */
 }
 
 section#login > div#imagem {
-
-    background: #5f2c82 url(../imagens/scottwebb.jpg) no-repeat;
-    background-size: cover;
-    background-position: left bottom;
+    display: block;
+    background: #5f2c82 url(../imagens/scottwebb.jpg) no-repeat; /* carregar a Imagem de Fundo */
+    background-size: cover;               /* Tamanho da da Imagem */
+    background-position: left bottom;      /* Posição da Imagem ( à esquerda e eem baixo) */ 
     
     height: 200px;
 }
@@ -65,14 +73,67 @@ section#login > div#formulario{
 
 div#formulario > h1 {
 
-    text-align: center; /* Centralizar o nome Login do formulario */
+    text-align: center;         /* Centralizar o nome Login do formulario */
 
-    margin-bottom: 10px;
+    margin-bottom: 10px;        /* Margem para baixo */
 
     }
 
     div#formulario > p {
 
-    font-size: 0.8em;
+    font-size: 0.8em;              /* Tamanho da fonte */
+
 
     }
+
+    form > input[type=submit] {
+
+        display: block; 
+        font-size: 1em;        /* Ocupar a linha inteira */
+        width: 100%;          /* Largura de cem por dento do container */
+        height: 40px;            /* Altura */
+        background-color: #49a09d; /* Cor do Plano de fundo */
+        color: white;         /* Cor da fonte */
+        border: none;           /* remover a Borda do contorno */
+        border-radius: 5px;     /* Arredondamento das Bordas */
+        text-decoration: none;  /* Remover o sublinhado do texto */
+        text-align: center;     /* Cor da fonte /*Centralizar o Texto */ 
+        cursor: pointer;        /* tornar o cursor enm uma mãozinha */ 
+    
+    }
+
+     /* Efeito (hover) de quando passar o Mouse sobre o Botão */
+
+    form > input[type=submit]:hover { 
+
+        background-color: rgb(13, 80, 58); /* Cor do Efeito hover */
+
+    }
+
+    /* configurações do botão */
+    /* O Link da classe Botão ... */
+    form > a.botao { 
+
+        display: block;
+        text-align: center; 
+        font-size: 1em;
+        width: 100%; 
+        height: 40px;
+        background-color: #5a807e;
+        border: 1px solid none #49a09d ;
+        text-decoration: none;
+        border-radius: 5px; 
+        padding-top: 10px;
+        margin-top: 5px;
+
+        color: #093b39;
+
+    }
+    form > a.botao:hover { 
+ 
+        background-color: white;
+
+    }
+
+
+    
