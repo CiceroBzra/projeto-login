@@ -21,12 +21,11 @@ Grandes Telas: Acima de 1200px.
 
     }
 
-
     section#login {
     width: 80vw;
+    height: 330px;
 
     }
-
 
      section#login > div#imagem {
 
@@ -45,12 +44,12 @@ Grandes Telas: Acima de 1200px.
 
     div#formulario > p {
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     }
     
 }
 
-    /*  */
+  /* Ficará na Largura específica para Telas Grandes quando atingir o ponto de 992px. */
 
     @media screen and (min-width: 992px) {
 
@@ -63,6 +62,7 @@ Grandes Telas: Acima de 1200px.
     section#login  {
 
     width: 950px;
+    height: 330px;
     
     }
 
@@ -89,7 +89,8 @@ Grandes Telas: Acima de 1200px.
 
     div#formulario > p {
 
-    font-size: 1.2em;
+    font-size: 1em;
+    margin: 20px 0px;
 
     }
 

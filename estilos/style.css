@@ -44,16 +44,19 @@ section#login {
     position: absolute;
     top: 50%;               /* 50% para cima */
     left: 50%;              /* 50% para a esquerda */
-    transform:translate(-50%, -50%) ;
     overflow: hidden;       /* Tudo que tiver fora da borda vai ficar escondido */
     
     width: 250px;               /* Largura da Tela */
     height: 515px;              /* Altura da Tela */
     border-radius: 20px;        /* Borda arredondada */
   
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);          /* Sombra das bordas */
-    transition: width 0.3s, height 0.3s;                 /* Modo e tempo/duração detransição */
-    transition-timing-function: ease;                         /* Suavisa o Efeito) */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);  /* Sombra das bordas */
+
+      /* Para evitar futuras incompatibilidades com animaões e transformações, deve-se colca estes códigos de animações e trasnformações na última linha do seletor */
+
+    transition: width 0.3s, height 0.3s; /* Modo e tempo/duração de transição */
+    transition-timing-function: ease;    /* Suavisa o Efeito) */
+    transform:translate(-50%, -50%);
     
 }
 
@@ -127,6 +130,21 @@ div#formulario > h1 {
         padding: 4px;
         border: 0px;
         border-radius: 8px;
+
+        /* Para evitar futuras incompatibilidades com animaões e transformações, deve-se colca estes códigos de animações e trasnformações na última linha do seletor */
+        
+        transform: translateY(-13px);
+
+    }
+
+    
+
+    /* Ganhar Foco" , ao clicar o campo ficará com fundo na cor apontada no seletor css */
+
+    div.campo > input:focus-within {
+
+        background-color: white;
+        
 
     }
 
